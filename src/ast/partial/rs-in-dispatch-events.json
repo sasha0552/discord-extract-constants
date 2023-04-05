@@ -1,0 +1,8 @@
+{
+  "type": "SwitchCase",
+
+  "test": {
+    "type": "Literal",
+    "value": "READY_SUPPLEMENTAL"
+  }
+}

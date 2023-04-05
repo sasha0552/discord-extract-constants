@@ -1,0 +1,48 @@
+{
+  "type": "UnaryExpression",
+  "operator": "!",
+
+  "argument": {
+    "type": "CallExpression",
+
+    "callee": {
+      "type": "FunctionExpression",
+
+      "params": [
+        {
+          "type": "Identifier"
+        }
+      ],
+
+      "body": {
+        "type": "BlockStatement"
+      }
+    },
+
+    "arguments": [
+      {
+        "type": "LogicalExpression",
+
+        "left": {
+          "type": "Identifier"
+        },
+
+        "operator": "||",
+
+        "right": {
+          "type": "AssignmentExpression",
+
+          "operator": "=",
+
+          "left": {
+            "type": "Identifier"
+          },
+
+          "right": {
+            "type": "ObjectExpression"
+          }
+        }
+      }
+    ]
+  }
+}

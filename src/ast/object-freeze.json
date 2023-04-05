@@ -1,0 +1,17 @@
+{
+  "type": "CallExpression",
+
+  "callee": {
+    "type": "MemberExpression",
+
+    "object": {
+      "type": "Identifier",
+      "name": "Object"
+    },
+
+    "property": {
+      "type": "Identifier",
+      "name": "freeze"
+    }
+  }
+}

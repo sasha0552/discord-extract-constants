@@ -1,0 +1,46 @@
+{
+  "type": "ExpressionStatement",
+
+  "expression": {
+    "type": "AssignmentExpression",
+
+    "operator": "=",
+
+    "left": {
+      "type": "MemberExpression",
+
+      "object": {
+        "type": "Identifier"
+      },
+
+      "property": {
+        "type": "AssignmentExpression",
+
+        "operator": "=",
+
+        "left": {
+          "type": "MemberExpression",
+
+          "object": {
+            "type": "Identifier"
+          },
+
+          "property": {
+            "type": "Identifier",
+            "name": "SPEAKING"
+          }
+        },
+
+        "right": {
+          "type": "Literal",
+          "value": 5
+        }
+      }
+    },
+
+    "right": {
+      "type": "Literal",
+      "value": "SPEAKING"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "type": "Property",
+
+  "key": {
+    "type": "Identifier",
+    "name": "USER"
+  },
+
+  "value": {
+    "type": "FunctionExpression",
+
+    "params": [
+      {
+        "type": "Identifier"
+      }
+    ],
+
+    "body": {
+      "type": "BlockStatement",
+
+      "body": [
+        {
+          "type": "ReturnStatement",
+
+          "argument": {
+            "type": "CallExpression",
+
+            "callee": {
+              "type": "MemberExpression",
+
+              "object": {
+                "type": "Literal",
+                "value": "/users/"
+              },
+
+              "property": {
+                "type": "Identifier",
+                "name": "concat"
+              }
+            },
+
+            "arguments": [
+              {
+                "type": "Identifier"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
