@@ -10,6 +10,24 @@ module.exports = function createAstComparer(object) {
 
             /////
 
+            if (key.startsWith(":eval")) {
+                if (typeof value === "string") {
+                    const body = JSON.stringify(value);
+
+                    statements.push(
+                        `if (!new Function("node", ${body})(${path})) {\n` +
+                        "    return false;\n"                              +
+                        "}\n"
+                    )
+                }
+
+                /////
+
+                continue;
+            }
+
+            /////
+
             if (typeof value === "object") {
                 if (Array.isArray(value)) {
                     statements.push(

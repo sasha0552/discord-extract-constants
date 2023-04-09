@@ -9,6 +9,7 @@ const createAstComparer = require("./utils/ast-comparer.js");
 const COMPARER_OBJECT_FREEZE  = createAstComparer(require("./ast/object-freeze.json"));
 const COMPARER_RESOLVER       = createAstComparer(require("./ast/resolver.json"));
 const COMPARER_SWITCH_CASE    = createAstComparer(require("./ast/switch-case.json"));
+const COMPARER_PROTOBUF       = createAstComparer(require("./ast/protobuf.json"));
 
 ///// ///// /////
 
@@ -22,6 +23,7 @@ const COMPARER_RS_IN_DISPATCH_EVENTS    = createAstComparer(require("./ast/parti
 const CONSTS_OBJECT_FREEZE = path.resolve(__dirname, "..", "out", "constants", "object_freeze");
 const CONSTS_RESOLVER      = path.resolve(__dirname, "..", "out", "constants", "resolver");
 const CONSTS_SWITCH_CASE   = path.resolve(__dirname, "..", "out", "constants", "switch_case");
+const CONSTS_PROTOBUF      = path.resolve(__dirname, "..", "out", "constants", "protobuf");
 
 ///// ///// /////
 
@@ -33,6 +35,7 @@ module.exports = {
     COMPARER_OBJECT_FREEZE,
     COMPARER_RESOLVER,
     COMPARER_SWITCH_CASE,
+    COMPARER_PROTOBUF,
     COMPARER_USER_IN_ROUTES,
     COMPARER_SPEAKING_IN_VOICE_EVENTS,
     COMPARER_RGM_IN_GATEWAY_EVENTS,
@@ -41,4 +44,5 @@ module.exports = {
     CONSTS_RESOLVER,
     CONSTS_SWITCH_CASE,
     CONSTS_RESULTS,
+    CONSTS_PROTOBUF,
 }
